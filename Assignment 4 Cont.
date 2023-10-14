@@ -1,0 +1,12 @@
+import 'dart:io';
+void main() {
+  print('Enter You Name :');
+  String name = stdin.readLineSync()!;
+  print('Enter You Age :');
+  double age = double.parse(stdin.readLineSync()!);
+  if (age < 100 && age > 0) {
+    double Age = 100 - age;
+    print(
+        'Mr $name Your Age Is $age And Rest $Age And Need $Age To Complete 100 Year');
+  }
+}
